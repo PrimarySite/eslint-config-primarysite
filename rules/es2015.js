@@ -40,6 +40,5 @@ modules.exports = {
       memberSyntaxSortOrder: ['none', 'single', 'multiple', 'all']
     }]
 
-
   }
 };
