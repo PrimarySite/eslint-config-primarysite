@@ -1,6 +1,5 @@
 module.exports = {
   rules: {
-
     'block-spacing': ['error', 'always'],
 
     'brace-style': ['error', '1tbs', {
@@ -19,11 +18,8 @@ module.exports = {
     }],
 
     'comma-style': ['error', 'last'],
-
     'computed-property-spacing': ['error', 'never'],
-
     'eol-last': ['error', 'always'],
-
     'func-call-spacing': ['error', 'never'],
 
     'func-name-matching': ['off', 'always', {
@@ -31,9 +27,7 @@ module.exports = {
     }],
 
     'id-blacklist': 'off',
-
     'id-length': 'off',
-
     'id-match': 'off',
 
     // Finish filling this in
@@ -53,7 +47,6 @@ module.exports = {
     }],
 
     'linebreak-style': ['error'], 'unix'],
-
     'semi': ['error', 'always'],
 
     'semi-spacing': ['error', {
