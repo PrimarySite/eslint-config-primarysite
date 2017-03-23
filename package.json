@@ -4,5 +4,8 @@
   "description": "PrimarySite's approach to JavaScript.",
   "repository": "https://github.com/PrimarySite/pslint.git",
   "author": "Kristian Roebuck <kristian@primarysite.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-react": "^6.10.3"
+  }
 }

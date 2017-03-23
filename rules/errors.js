@@ -9,7 +9,7 @@ module.exports = {
     'no-extra-boolean-cast': 'error',
     'no-extra-parens': ['error', 'all', {
       ignoreJSX: 'multi-line',
-      'nestedBinaryExpressions': false
+      nestedBinaryExpressions: false
     }],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
@@ -21,6 +21,8 @@ module.exports = {
     'no-unreachable': 'error',
     'no-unsafe-negation': 'error',
     'use-isnan': 'error',
-    'valid-typeof': ['error', { 'requireStringLiterals': true }]
+    'valid-typeof': ['error', {
+      requireStringLiterals: true
+    }]
   }
 };

@@ -1,6 +1,8 @@
 module.exports = {
   rules: {
-    'accessor-pairs': ['error', { 'getWithoutSet': true }],
+    'accessor-pairs': ['error', {
+      getWithoutSet: true
+    }],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'class-methods-use-this', 'error',
@@ -8,7 +10,9 @@ module.exports = {
     'consistent-return': 'error',
     'curly': ['error', 'all'],
     'dot-location': ['error', 'property'],
-    'dot-notation': ['error', { 'allowKeywords': false }]
+    'dot-notation': ['error', {
+      allowKeywords: false
+    }],
     'eqeqeq': ['error', 'always'],
     'guard-for-in': 'error',
     'no-alert': 'error',
@@ -16,7 +20,9 @@ module.exports = {
     'no-case-declarations': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'error',
-    'no-empty-function': ['error', { 'allow': ['arrowFunctions'] }],
+    'no-empty-function': ['error', {
+      allow: ['arrowFunctions']
+    }],
     'no-empty-pattern': 'error',
     'no-eq-null': 'error',
     'no-eval': 'error',
@@ -32,21 +38,32 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': ['error', { 'enforceConst': true, detectObjects: true }],
-    'no-multi-spaces': ['error', 'exceptions': { 'Property': false }],
+    'no-magic-numbers': ['error', {
+      enforceConst: true,
+      detectObjects: true
+    }],
+    'no-multi-spaces': ['error', 'exceptions': {
+      Property: false
+    }],
     'no-multi-str': 'error',
     'no-new': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
-    'no-param-reassign': ['error', { 'props': true }],
+    'no-param-reassign': ['error', {
+      props: true
+    }],
     'no-proto': 'error',
-    'no-redeclare': ['error', { 'builtinGlobals': true }],
+    'no-redeclare': ['error', {
+      builtinGlobals: true
+    }],
     'no-return-assign': ['error', 'always'],
     'no-return-await': 'error',
     'no-script-url': 'error',
-    'no-self-assign': ['error', { 'props': true }],
+    'no-self-assign': ['error', {
+      props: true
+    }],
     'no-self-compare': 'error',
     'no-sequences': 'error',
     'no-throw-literal': 'error',
@@ -63,7 +80,9 @@ module.exports = {
     'radix': ['error', 'as-needed'],
     'require-await': 'error',
     'vars-on-top': 'error',
-    'wrap-iife': ['error', 'outside', { 'functionPrototypeMethods': true }],
+    'wrap-iife': ['error', 'outside', {
+      functionPrototypeMethods: true
+    }],
     'yoda': ['error', 'never']
   }
 };
