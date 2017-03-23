@@ -3,8 +3,10 @@ module.exports = {
     './rules/best-practices',
     './rules/errors',
     './rules/es2015',
+    './rules/imports',
     './rules/node',
     './rules/react',
+    './rules/react-ally',
     './rules/style',
     './rules/variables'
   ].map(require.resolve)

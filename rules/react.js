@@ -2,13 +2,11 @@ module.exports = {
   plugins: [
     'react',
   ],
-
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     }
   },
-
   rules: {
     'react/display-name': ['off', {
       ignoreTranspilerName: false
