@@ -7,8 +7,8 @@ module.exports = {
       jsx: true
     }
   },
-  ecmaFeatures: {
-    jsx: true,
+  globals: {
+    React: true,
   },
   rules: {
     'react/display-name': ['off', {
