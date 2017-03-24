@@ -5,7 +5,7 @@ module.exports = {
     }],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'class-methods-use-this', 'error',
+    'class-methods-use-this': 'error',
     'complexity': ['error', 5],
     'consistent-return': 'error',
     'curly': ['error', 'all'],
@@ -42,8 +42,13 @@ module.exports = {
       enforceConst: true,
       detectObjects: true
     }],
-    'no-multi-spaces': ['error', 'exceptions': {
-      Property: false
+    'no-multi-spaces': ['error', {
+      exceptions: {
+        Property: false,
+        BinaryExpression: true,
+        VariableDeclarator: false,
+        ImportDeclaration: false
+      }
     }],
     'no-multi-str': 'error',
     'no-new': 'error',

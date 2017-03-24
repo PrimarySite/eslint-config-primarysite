@@ -6,7 +6,7 @@ module.exports = {
     './rules/imports',
     './rules/node',
     './rules/react',
-    './rules/react-ally',
+    './rules/react-a11y',
     './rules/style',
     './rules/variables'
   ].map(require.resolve)

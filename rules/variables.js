@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    browser: true
+  },
   rules: {
     'init-declarations': ['error', 'always'],
     'no-catch-shadow': 'error',

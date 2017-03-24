@@ -40,7 +40,7 @@ module.exports = {
     'key-spacing': ['error', {
       afterColon: true,
       beforeColon: false,
-      mode: strict
+      mode: 'strict'
     }],
     'keyword-spacing': ['error', {
       after: true,
@@ -52,7 +52,7 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     'lines-around-comment': ['error', {
       allowArrayEnd: true,
-      allowArrayStar: true,
+      allowArrayStart: true,
       allowBlockEnd: true,
       allowBlockStart: true,
       allowObjectEnd: true,
@@ -77,7 +77,9 @@ module.exports = {
     'max-nested-callbacks': ['error', 3],
     'max-params': ['error', 4],
     'max-statements': ['error', 15],
-    'max-statements-per-line': ['error', 1],
+    'max-statements-per-line': ['error', {
+      max: 1
+    }],
     'new-cap': ['error', {
       capIsNew: true,
       newIsCap: true,
@@ -134,7 +136,7 @@ module.exports = {
       objectsInObjects: false
     }],
     'object-property-newline': 'error',
-    'one-var': ['error', 'never', {
+    'one-var': ['error', {
       initialized: 'always',
       uninitialized: 'never'
     }],
