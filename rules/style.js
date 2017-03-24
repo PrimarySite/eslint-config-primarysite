@@ -112,10 +112,7 @@ module.exports = {
     'no-plusplus': ['error', {
       allowForLoopAfterthoughts: true
     }],
-    // http://eslint.org/docs/rules/#stylistic-issues
-    // http://eslint.org/docs/rules/no-restricted-syntax
-    // Double check this
-    'no-restricted-syntax': ['error', 'FunctionExpression'],
+    'no-restricted-syntax': 'off',
     'no-tabs': 'error',
     'no-ternary': 'off',
     'no-trailing-spaces': 'error',
