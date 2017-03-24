@@ -135,7 +135,7 @@ module.exports = {
     'object-property-newline': 'error',
     'one-var': ['error', {
       initialized: 'always',
-      uninitialized: 'never'
+      uninitialized: 'always'
     }],
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': ['error', 'never'],
@@ -161,8 +161,8 @@ module.exports = {
     }],
     'sort-vars': 'off',
     'space-before-blocks': ['error', {
-      classes: 'never',
-      functions: 'never',
+      classes: 'always',
+      functions: 'always',
       keywords: 'always'
     }],
     'space-before-function-paren': ['error', 'never'],

@@ -5,7 +5,7 @@ module.exports = {
     }],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'class-methods-use-this': 'error',
+    'class-methods-use-this': 'off',
     'complexity': ['error', 5],
     'consistent-return': 'error',
     'curly': ['error', 'all'],
@@ -45,7 +45,7 @@ module.exports = {
     'no-multi-spaces': ['error', {
       exceptions: {
         Property: false,
-        BinaryExpression: true,
+        BinaryExpression: false,
         VariableDeclarator: false,
         ImportDeclaration: false
       }
