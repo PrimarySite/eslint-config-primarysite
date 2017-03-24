@@ -6,7 +6,7 @@
   "author": "Kristian Roebuck <kristian@primarysite.net> (https://twitter.com/roebuk)",
   "license": "MIT",
   "scripts": {
-    "preinstall": "yarn",
+    "preinstall": "yarn"
   },
   "bugs": {
     "url": "https://github.com/PrimarySite/pslint/issues"
