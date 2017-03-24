@@ -7,8 +7,10 @@ module.exports = {
       jsx: true
     }
   },
-  globals: {
-    React: true,
+  settings: {
+    react: {
+      pragma: 'React'
+    }
   },
   rules: {
     'react/display-name': ['off', {
