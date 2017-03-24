@@ -7,6 +7,9 @@ module.exports = {
       jsx: true
     }
   },
+  ecmaFeatures: {
+    jsx: true,
+  },
   rules: {
     'react/display-name': ['off', {
       ignoreTranspilerName: false
