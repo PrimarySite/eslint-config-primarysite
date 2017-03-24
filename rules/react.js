@@ -12,7 +12,7 @@ module.exports = {
       ignoreTranspilerName: false
     }],
     'react/forbid-component-props': 'off',
-    'react/forbid-elements': 'off'
+    'react/forbid-elements': 'off',
     'react/forbid-prop-types': 'off',
     'react/forbid-foreign-prop-types': 'error',
     'react/no-array-index-key': 'error',

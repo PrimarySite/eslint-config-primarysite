@@ -36,7 +36,7 @@ module.exports = {
     'import/no-internal-modules': ['off', {
       allow: [],
     }],
-    'no-webpack-loader-syntax': 'error',
+    'import/no-webpack-loader-syntax': 'error',
     // Helpful Warnings
     'import/export': 'error',
     'import/no-named-as-default': 'error',
@@ -49,7 +49,7 @@ module.exports = {
     }],
     'import/no-mutable-exports': 'error',
     // Module Systems
-    'import/unambiguous': 'error',
+    'import/unambiguous': 'off',
     'import/no-commonjs': 'error',
     'import/no-amd': 'error',
     'import/no-nodejs-modules': 'off',
@@ -79,14 +79,6 @@ module.exports = {
       max: 10
     }],
     'import/no-unassigned-import': 'error',
-    'import/no-named-default': 'error',
-    'import/no-anonymous-default-export': ['error', {
-      'allowArray': false,
-      'allowArrowFunction': false,
-      'allowAnonymousClass': false,
-      'allowAnonymousFunction': false,
-      'allowLiteral': false,
-      'allowObject': false
-    }]
+    'import/no-named-default': 'error'
   }
 };
