@@ -8,6 +8,7 @@ module.exports = {
     './rules/react',
     './rules/react-a11y',
     './rules/style',
+    './rules/tests',
     './rules/variables'
   ].map(require.resolve)
 };
