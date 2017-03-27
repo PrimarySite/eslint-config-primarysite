@@ -6,7 +6,7 @@
   "author": "Kristian Roebuck <kristian@primarysite.net>",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npm prune && npm install"
+    "preinstall": "npm install"
   },
   "bugs": {
     "url": "https://github.com/PrimarySite/pslint/issues"
