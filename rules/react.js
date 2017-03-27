@@ -7,11 +7,6 @@ module.exports = {
       jsx: true
     }
   },
-  settings: {
-    react: {
-      pragma: 'React'
-    }
-  },
   rules: {
     'react/display-name': ['off', {
       ignoreTranspilerName: false
@@ -100,7 +95,7 @@ module.exports = {
       beforeSelfClosing: 'always',
       afterOpening: 'never'
     }],
-    'react/jsx-uses-react': 'off',
+    'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': ['error', {
       declaration: true,
