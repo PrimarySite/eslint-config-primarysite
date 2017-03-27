@@ -24,7 +24,7 @@ module.exports = {
       includeCommonJSModuleExports: true
     }],
     'func-names': ['error', 'as-needed'],
-    'func-style': ['error', 'declaration'],
+    'func-style': 'off',
     'id-blacklist': ['error', 'id'],
     'id-length': ['error', {
       min: 3,
