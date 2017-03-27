@@ -134,8 +134,8 @@ module.exports = {
     }],
     'object-property-newline': 'error',
     'one-var': ['error', {
-      initialized: 'always',
-      uninitialized: 'always'
+      initialized: 'never',
+      uninitialized: 'never'
     }],
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': ['error', 'never'],
