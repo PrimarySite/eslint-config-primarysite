@@ -5,9 +5,6 @@
   "repository": "https://github.com/PrimarySite/pslint.git",
   "author": "Kristian Roebuck <kristian@primarysite.net>",
   "license": "MIT",
-  "scripts": {
-    "preinstall": "npm install"
-  },
   "bugs": {
     "url": "https://github.com/PrimarySite/pslint/issues"
   },
