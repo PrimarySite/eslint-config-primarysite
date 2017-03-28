@@ -102,7 +102,7 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-assign': 'error',
     'no-multiple-empty-lines': ['error', {
-      max: 2,
+      max: 1,
       maxBOF: 0,
       maxEOF: 1
     }],
