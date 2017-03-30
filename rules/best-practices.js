@@ -40,7 +40,8 @@ module.exports = {
     'no-loop-func': 'error',
     'no-magic-numbers': ['error', {
       enforceConst: true,
-      detectObjects: true
+      detectObjects: true,
+      ignore: [0]
     }],
     'no-multi-spaces': ['error', {
       exceptions: {
