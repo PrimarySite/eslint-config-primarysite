@@ -19,7 +19,7 @@ module.exports = {
     'import/core-modules': [],
     'import/ignore': [
       'node_modules',
-      '\.(css|svg|json)$',
+      /\.(css|svg|json)$/
     ]
   },
   rules: {
