@@ -10,17 +10,18 @@ module.exports = {
     'import'
   ],
   settings: {
-  'import/resolver': {
-    node: {
-      extensions: ['.js', '.json']
-    }
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.json']
+      }
+    },
+    'import/extensions': ['.js'],
+    'import/core-modules': [],
+    'import/ignore': [
+      'node_modules',
+      '\.(css|svg|json)$',
+    ]
   },
-  'import/extensions': ['.js'],
-  'import/core-modules': [],
-  'import/ignore': [
-    'node_modules',
-    '\\.css|svg|json)$',
-  ]},
   rules: {
     // Static analysis
     'import/no-unresolved': ['error', {
