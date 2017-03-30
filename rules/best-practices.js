@@ -41,7 +41,7 @@ module.exports = {
     'no-magic-numbers': ['error', {
       enforceConst: true,
       detectObjects: true,
-      ignore: [0]
+      ignore: [0, 1, 2, 3, 4, 5]
     }],
     'no-multi-spaces': ['error', {
       exceptions: {
