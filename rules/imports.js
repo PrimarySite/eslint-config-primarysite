@@ -79,7 +79,7 @@ module.exports = {
     'import/max-dependencies': ['error', {
       max: 10
     }],
-    'import/no-unassigned-import': 'error',
+    'import/no-unassigned-import': 'off',
     'import/no-named-default': 'error'
   }
 };
