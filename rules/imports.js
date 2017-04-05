@@ -79,6 +79,8 @@ module.exports = {
     'import/max-dependencies': ['error', {
       max: 10
     }],
+    // Hopefully we can turn this on when we can whitelist .css
+    // https://github.com/benmosher/eslint-plugin-import/issues/671
     'import/no-unassigned-import': 'off',
     'import/no-named-default': 'error'
   }
