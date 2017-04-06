@@ -61,7 +61,7 @@ module.exports = {
     'react/jsx-first-prop-new-line': ['error', 'never'],
     'react/jsx-handler-names': ['error', {
       eventHandlerPrefix: 'handle',
-      eventHandlerPropPrefix: 'on'
+      eventHandlerPropPrefix: 'handle'
     }],
     'react/jsx-indent': ['error', 2],
     'react/jsx-key': 'error',

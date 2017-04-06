@@ -73,7 +73,7 @@ module.exports = {
       'newlines-between': 'always'
     }],
     'import/newline-after-import': ['error', {
-      count: 2
+      count: 1
     }],
     'import/prefer-default-export': 'error',
     'import/max-dependencies': ['error', {
