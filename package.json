@@ -1,10 +1,11 @@
 {
   "name": "eslint-config-primarysite",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PrimarySite's approach to JavaScript.",
   "repository": "https://github.com/PrimarySite/pslint.git",
   "author": "Kristian Roebuck <kristian@primarysite.net>",
-  "license": "MIT",
+  "private": true,
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/PrimarySite/pslint/issues"
   },

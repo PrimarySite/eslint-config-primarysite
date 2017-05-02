@@ -29,13 +29,13 @@ module.exports = {
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     // replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
-   'no-duplicate-imports': 'off',
-   'no-new-symbol': 'error',
-   'no-restricted-imports': 'off',
-   'no-this-before-super': 'error',
-   'no-useless-computed-key': 'error',
-   'no-useless-constructor': 'error',
-   'no-useless-rename': ['error', {
+    'no-duplicate-imports': 'off',
+    'no-new-symbol': 'error',
+    'no-restricted-imports': 'off',
+    'no-this-before-super': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error',
+    'no-useless-rename': ['error', {
       ignoreDestructuring: false,
       ignoreImport: false,
       ignoreExport: false,
@@ -45,7 +45,6 @@ module.exports = {
       ignoreConstructors: false,
       avoidQuotes: true,
     }],
-
     'prefer-const': 'error',
     'prefer-destructuring': ['error', {
       array: true,
