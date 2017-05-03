@@ -10,9 +10,7 @@ module.exports = {
     'consistent-return': 'error',
     'curly': ['error', 'all'],
     'dot-location': ['error', 'property'],
-    'dot-notation': ['error', {
-      allowKeywords: false
-    }],
+    'dot-notation': 'error',
     'eqeqeq': ['error', 'always'],
     'guard-for-in': 'error',
     'no-alert': 'error',
