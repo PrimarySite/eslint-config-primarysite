@@ -1,3 +1,11 @@
 # PrimarySite's approach to JavaScript
 
-More coming soon.
+### Getting started
+
+    $ yarn install eslint-config-primarysite
+
+With your project's .eslintrc.js, extend 'primarysite'
+
+    module.exports = {
+       extends: 'primarysite'
+    };

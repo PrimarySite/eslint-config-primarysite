@@ -1,8 +1,29 @@
 {
-  "name": "pslint",
-  "version": "0.0.0",
+  "name": "eslint-config-primarysite",
+  "version": "0.1.0",
   "description": "PrimarySite's approach to JavaScript.",
   "repository": "https://github.com/PrimarySite/pslint.git",
   "author": "Kristian Roebuck <kristian@primarysite.net>",
-  "license": "MIT"
+  "private": true,
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/PrimarySite/pslint/issues"
+  },
+  "homepage": "https://github.com/PrimarySite/pslint",
+  "keywords": [
+    "style guide",
+    "lint",
+    "eslint",
+    "eslintconfig",
+    "es6",
+    "es2015",
+    "react",
+    "jsx"
+  ],
+  "dependencies": {
+    "eslint": "^3.18.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
 }
