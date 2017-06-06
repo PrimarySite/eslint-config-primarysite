@@ -36,11 +36,7 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': ['error', {
-      enforceConst: true,
-      detectObjects: true,
-      ignore: [-1, 0, 1, 2, 3, 4, 5]
-    }],
+    'no-magic-numbers': 'off',
     'no-multi-spaces': ['error', {
       exceptions: {
         Property: false,
