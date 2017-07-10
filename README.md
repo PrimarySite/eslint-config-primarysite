@@ -2,7 +2,7 @@
 
 ### Getting started
 
-    $ yarn install eslint-config-primarysite
+    $ yarn install eslint-config-primarysite prettier
 
 With your project's .eslintrc.js, extend 'primarysite'
 
