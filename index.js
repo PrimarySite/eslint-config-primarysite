@@ -6,6 +6,7 @@ module.exports = {
       './rules/es2015',
       './rules/imports',
       './rules/node',
+      './rules/prettier',
       './rules/react',
       './rules/react-a11y',
       './rules/style',
@@ -17,15 +18,5 @@ module.exports = {
   ],
   plugins: [
     'prettier'
-  ],
-  rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        jsxBracketSameLine: true,
-        printWidth: 99,
-        singleQuote: true
-      }
-    ]
-  }
+  ]
 };
