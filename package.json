@@ -7,9 +7,9 @@
   "private": true,
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/PrimarySite/pslint/issues"
+    "url": "https://github.com/PrimarySite/eslint-config-primarysite/issues"
   },
-  "homepage": "https://github.com/PrimarySite/pslint",
+  "homepage": "https://github.com/PrimarySite/eslint-config-primarysite",
   "keywords": [
     "style guide",
     "lint",
