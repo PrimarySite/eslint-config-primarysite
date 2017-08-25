@@ -9,6 +9,8 @@ module.exports = {
     }
   },
   rules: {
+    'react/boolean-prop-naming': 'off',
+    'react/default-props-match-prop-types': 'error',
     'react/display-name': ['off', {
       ignoreTranspilerName: false
     }],
@@ -26,12 +28,16 @@ module.exports = {
     'react/no-direct-mutation-state': 'error',
     'react/no-find-dom-node': 'error',
     'react/no-multi-comp': 'error',
+    'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',
+    'react/no-typos': 'error',
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
     'react/no-unused-prop-types': 'error',
+    'react/no-unused-state': 'error',
+    'react/no-will-update-set-state': ['error', 'disallow-in-func'],
     'react/prefer-es6-class': ['error', 'always'],
     'react/prefer-stateless-function': 'error',
     'react/prop-types': ['error', {
@@ -46,20 +52,25 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/sort-comp': 'error',
     'react/sort-prop-types': ['error', {
-      ignoreCase: true,
       callbacksLast: false,
-      requiredFirst: false,
+      ignoreCase: true,
+      requiredFirst: false
     }],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
+
     // JSX Specifics
     'react/jsx-boolean-value': ['error', 'always'],
     'react/jsx-closing-bracket-location': ['error', 'after-props'],
-    'react/jsx-curly-spacing': ['error', 'never'],
+    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-curly-spacing': ['error', {
+      'when': 'never',
+      'children': true
+    }],
     'react/jsx-filename-extension': ['error', {
       extensions: ['.js']
     }],
-    'react/jsx-first-prop-new-line': ['error', 'never'],
+    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
     'react/jsx-handler-names': ['error', {
       eventHandlerPrefix: 'handle',
       eventHandlerPropPrefix: 'handle'
@@ -71,9 +82,9 @@ module.exports = {
       when: 'multiline'
     }],
     'react/jsx-no-bind': ['error', {
-      ignoreRefs: true,
       allowArrowFunctions: true,
       allowBind: false,
+      ignoreRefs: true
     }],
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': 'error',
@@ -84,13 +95,13 @@ module.exports = {
       allowAllCaps: false
     }],
     'react/jsx-sort-props': ['error', {
-      ignoreCase: true,
       callbacksLast: false,
+      ignoreCase: true,
+      noSortAlphabetically: false,
       shorthandFirst: false,
       shorthandLast: false,
-      noSortAlphabetically: false,
+      reservedFirst: false
     }],
-    'react/jsx-space-before-closing': ['error', 'always'],
     'react/jsx-tag-spacing': ['error', {
       closingSlash: 'never',
       beforeSelfClosing: 'always',
@@ -99,8 +110,9 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': ['error', {
-      declaration: true,
+      arrow: true,
       assignment: true,
+      declaration: true,
       return: true
     }]
   }
