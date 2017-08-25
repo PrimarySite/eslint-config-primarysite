@@ -7,5 +7,5 @@
 With your project's .eslintrc.js, extend 'primarysite'
 
     module.exports = {
-       extends: 'primarysite'
+      extends: 'primarysite'
     };
