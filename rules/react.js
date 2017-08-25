@@ -64,8 +64,8 @@ module.exports = {
     'react/jsx-closing-bracket-location': ['error', 'after-props'],
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-curly-spacing': ['error', {
-      'when': 'never',
-      'children': true
+      'children': true,
+      'when': 'never'
     }],
     'react/jsx-filename-extension': ['error', {
       extensions: ['.js']
