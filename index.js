@@ -14,5 +14,5 @@ const rules = [
 
 module.exports = {
   extends: [...rules, 'prettier', 'prettier/react'],
-  plugins: ['prettier']
+  plugins: ['import', 'jsx-a11y', 'prettier', 'react']
 };
