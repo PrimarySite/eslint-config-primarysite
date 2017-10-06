@@ -13,6 +13,5 @@ const rules = [
 ].map(require.resolve);
 
 module.exports = {
-  extends: [...rules, 'prettier', 'prettier/react'],
-  plugins: ['prettier']
+  extends: [...rules, 'prettier', 'prettier/react']
 };

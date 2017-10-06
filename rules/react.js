@@ -63,6 +63,7 @@ module.exports = {
     'react/jsx-boolean-value': ['error', 'always'],
     'react/jsx-closing-bracket-location': ['error', 'after-props'],
     'react/jsx-closing-tag-location': 'error',
+    'react/jsx-curly-brace-presence': ['error', { 'props': 'never', 'children': 'never' }],
     'react/jsx-curly-spacing': ['error', {
       'children': true,
       'when': 'never'
