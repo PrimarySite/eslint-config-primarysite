@@ -1,9 +1,10 @@
 module.exports = {
   rules: {
-    'array-bracket-newline': 'error',
-    'array-bracket-spacing': ['error', {
+    'array-bracket-newline': ['error', {
       multiline: true
     }],
+    'array-bracket-spacing': ['error', 'never'],
+    'array-element-newline': 'off',
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', {
       allowSingleLine: true
@@ -28,14 +29,22 @@ module.exports = {
     }],
     'func-names': ['error', 'as-needed'],
     'func-style': 'off',
+    'function-paren-newline': 'multiline',
     'id-blacklist': ['error', 'id'],
     'id-length': ['error', {
       min: 3,
       exceptions: ['e']
     }],
+    'id-match': ['error', '^[a-z]+([A-Z][a-z]+)*$', {
+      onlyDeclarations: false,
+      properties: true
+    }],
+    'implicit-arrow-linebreak': ['error', 'beside'],
     'indent': ['error', 2, {
       CallExpression: { 'arguments': 1 },
       FunctionDeclaration: { 'body': 1, 'parameters': 0 },
+      flatTernaryExpressions: false,
+      ImportDeclaration: 1,
       MemberExpression: 1,
       SwitchCase: 1
     }],
@@ -54,19 +63,20 @@ module.exports = {
     }],
     'linebreak-style': ['error', 'unix'],
     'lines-around-comment': ['error', {
+      afterBlockComment: false,
+      afterLineComment: false,
       allowArrayEnd: true,
       allowArrayStart: true,
       allowBlockEnd: true,
       allowBlockStart: true,
+      allowClassEnd: true
+      allowClassStart: true,
       allowObjectEnd: true,
       allowObjectStart: true,
       beforeBlockComment: true,
-      beforeLineComment: true
+      beforeLineComment: false
     }],
-    'lines-around-directive': ['error', {
-      before: 'never',
-      after: 'always'
-    }],
+    'lines-between-class-members': ['error', 'always'],
     'max-depth': ['error', {
       max: 4
     }],
@@ -83,14 +93,14 @@ module.exports = {
     'max-statements-per-line': ['error', {
       max: 1
     }],
+    'multiline-comment-style': ['error', 'separate-lines'],
+    'multiline-ternary': ['error', 'always-multiline'],
     'new-cap': ['error', {
       capIsNew: true,
       newIsCap: true,
       properties: true
     }],
     'new-parens': 'error',
-    'newline-after-var': ['error', 'always'],
-    'newline-before-return': 'error',
     'newline-per-chained-call': ['error', {
       ignoreChainWithDepth: 2
     }],
@@ -118,10 +128,14 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-tabs': 'error',
     'no-ternary': 'off',
-    'no-trailing-spaces': 'error',
+    'no-trailing-spaces': ['error', {
+      ignoreComments: false,
+      skipBlankLines: false
+    }],
     'no-underscore-dangle': ['error', {
       allowAfterSuper: false,
-      allowAfterThis: false
+      allowAfterThis: false,
+      enforceInMethodNames: true
     }],
     'no-unneeded-ternary': ['error', {
       defaultAssignment: false
@@ -202,11 +216,14 @@ module.exports = {
       after: true,
       before: false
     }],
+    'semi-style': ['error', 'last'],
     'sort-keys': ['error', 'asc', {
       caseSensitive: false,
       natural: true
     }],
-    'sort-vars': 'off',
+    'sort-vars': ['error', {
+      ignoreCase: true
+    }],
     'space-before-blocks': ['error', {
       classes: 'always',
       functions: 'always',
