@@ -29,7 +29,7 @@ module.exports = {
     }],
     'func-names': ['error', 'as-needed'],
     'func-style': 'off',
-    'function-paren-newline': 'multiline',
+    'function-paren-newline': ['error', 'multiline'],
     'id-blacklist': ['error', 'id'],
     'id-length': ['error', {
       min: 3,
