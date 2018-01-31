@@ -159,7 +159,7 @@ module.exports = {
     'operator-assignment': ['error', 'never'],
     'operator-linebreak': ['error', 'after'],
     'padded-blocks': ['error', 'never'],
-    'padding-line-between-statements', ['error', {
+    'padding-line-between-statements': ['error', {
       blankLine: 'always',
       prev: '*',
       next: [
