@@ -32,18 +32,15 @@ module.exports = {
     'function-paren-newline': ['error', 'multiline'],
     'id-blacklist': ['error', 'id'],
     'id-length': ['error', {
-      min: 3,
-      exceptions: ['e']
+      exceptions: ['e'],
+      min: 3
     }],
-    'id-match': ['error', '^[a-z]+([A-Z][a-z]+)*$', {
-      onlyDeclarations: false,
-      properties: true
-    }],
+    'id-match': 'off',
     'implicit-arrow-linebreak': ['error', 'beside'],
     'indent': ['error', 2, {
-      CallExpression: { 'arguments': 1 },
-      FunctionDeclaration: { 'body': 1, 'parameters': 0 },
+      CallExpression: { arguments: 1 },
       flatTernaryExpressions: false,
+      FunctionDeclaration: { body: 1, parameters: 0 },
       ImportDeclaration: 1,
       MemberExpression: 1,
       SwitchCase: 1
@@ -83,8 +80,8 @@ module.exports = {
     'max-len': ['error', {
       code: 99,
       comments: 79,
-      ignoreUrls: true,
-      ignoreRegExpLiterals: true
+      ignoreRegExpLiterals: true,
+      ignoreUrls: true
     }],
     'max-lines': ['error', 500],
     'max-nested-callbacks': ['error', 3],
@@ -163,23 +160,20 @@ module.exports = {
       blankLine: 'always',
       prev: '*',
       next: [
-        'block-like', 'case', 'cjs-export', 'class', 'default', 'do', 'export', 'for', 'function',
-        'if', 'multiline-block-like', 'return', 'switch', 'try', 'while', 'with'
+        'block-like', 'case', 'cjs-export', 'class', 'default', 'do', 'export', 'for',
+        'function', 'if', 'multiline-block-like', 'return', 'switch', 'try', 'while', 'with'
       ]
     }, {
       blankLine: 'never',
       prev: '*',
-      next: ['directive', 'import']
+      next: 'directive'
     }, {
       blankLine: 'always',
-      prev: [
-        'block-like', 'cjs-import', 'const', 'directive', 'import', 'let',
-        'multiline-block-like'
-      ],
+      prev: ['block-like', 'cjs-import', 'const', 'directive', 'let', 'multiline-block-like'],
       next: '*'
     }, {
       blankLine: 'never',
-      prev: ['class', 'do', 'for', 'function', 'if', 'return', 'switch', 'try', 'while', 'with'],
+      prev: 'return',
       next: '*'
     }, {
       blankLine: 'always',
@@ -233,9 +227,9 @@ module.exports = {
     'space-in-parens': ['error', 'never'],
     'space-infix-ops': 'error',
     'space-unary-ops': ['error', {
-      words: true,
       nonwords: false,
       overrides: {},
+      words: true
     }],
     'spaced-comment': ['error', 'always'],
     'switch-colon-spacing': ['error', {
