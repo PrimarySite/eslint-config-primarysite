@@ -69,7 +69,7 @@ module.exports = {
       allowArrayStart: true,
       allowBlockEnd: true,
       allowBlockStart: true,
-      allowClassEnd: true
+      allowClassEnd: true,
       allowClassStart: true,
       allowObjectEnd: true,
       allowObjectStart: true,
