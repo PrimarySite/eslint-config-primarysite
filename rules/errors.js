@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    'for-direction': 'error',
     'no-cond-assign': ['error', 'always'],
     'no-dupe-args': 'error',
     'no-dupe-keys': 'error',

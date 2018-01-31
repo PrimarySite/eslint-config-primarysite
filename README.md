@@ -1,6 +1,6 @@
 # PrimarySite's approach to JavaScript
 
-### Getting started
+## Getting started
 
     $ yarn install eslint-config-primarysite
 

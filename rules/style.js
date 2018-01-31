@@ -1,6 +1,9 @@
 module.exports = {
   rules: {
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-newline': 'error',
+    'array-bracket-spacing': ['error', {
+      multiline: true
+    }],
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', {
       allowSingleLine: true
@@ -126,6 +129,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': 'off',
     'object-curly-newline': ['error', {
+      consistent: true,
       multiline: true
     }],
     'object-curly-spacing': ['error', 'always', {
@@ -141,6 +145,49 @@ module.exports = {
     'operator-assignment': ['error', 'never'],
     'operator-linebreak': ['error', 'after'],
     'padded-blocks': ['error', 'never'],
+    'padding-line-between-statements', ['error', {
+      blankLine: 'always',
+      prev: '*',
+      next: [
+        'block-like', 'case', 'cjs-export', 'class', 'default', 'do', 'export', 'for', 'function',
+        'if', 'multiline-block-like', 'return', 'switch', 'try', 'while', 'with'
+      ]
+    }, {
+      blankLine: 'never',
+      prev: '*',
+      next: ['directive', 'import']
+    }, {
+      blankLine: 'always',
+      prev: [
+        'block-like', 'cjs-import', 'const', 'directive', 'import', 'let',
+        'multiline-block-like'
+      ],
+      next: '*'
+    }, {
+      blankLine: 'never',
+      prev: ['class', 'do', 'for', 'function', 'if', 'return', 'switch', 'try', 'while', 'with'],
+      next: '*'
+    }, {
+      blankLine: 'always',
+      prev: 'break',
+      next: 'case'
+    }, {
+      blankLine: 'never',
+      prev: 'directive',
+      next: 'directive'
+    }, {
+      blankLine: 'never',
+      prev: 'case',
+      next: 'return'
+    }, {
+      blankLine: 'never',
+      prev: 'switch',
+      next: 'case'
+    }, {
+      blankLine: 'any',
+      prev: ['const', 'let', 'var'],
+      next: ['const', 'let', 'var']
+    }],
     'quote-props': ['error', 'as-needed', {
       keywords: false,
       numbers: false,
@@ -174,6 +221,10 @@ module.exports = {
       overrides: {},
     }],
     'spaced-comment': ['error', 'always'],
+    'switch-colon-spacing': ['error', {
+      after: true,
+      before: false
+    }],
     'template-tag-spacing': 'error',
     'unicode-bom': ['error', 'never'],
     'wrap-regex': 'off'
