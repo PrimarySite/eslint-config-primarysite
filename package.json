@@ -9,16 +9,7 @@
     "url": "https://github.com/PrimarySite/eslint-config-primarysite/issues"
   },
   "homepage": "https://github.com/PrimarySite/eslint-config-primarysite",
-  "keywords": [
-    "style guide",
-    "lint",
-    "eslint",
-    "eslintconfig",
-    "es6",
-    "es2015",
-    "react",
-    "jsx"
-  ],
+  "keywords": ["style guide", "lint", "eslint", "eslintconfig", "es6", "es2015", "react", "jsx"],
   "peerDependencies": {
     "eslint": "^4.16.0"
   },
@@ -28,6 +19,6 @@
     "eslint-plugin-jsx-a11y": "~6.0.3",
     "eslint-plugin-prettier": "~2.5.0",
     "eslint-plugin-react": "~7.6.1",
-    "prettier": "~1.7.4"
+    "prettier": "~1.10.2"
   }
 }

@@ -19,9 +19,7 @@ module.exports = {
     'react/forbid-component-props': ['error', {
       forbid: ['style']
     }],
-    'react/forbid-dom-props': ['error', {
-      forbid: ['id']
-    }],
+    'react/forbid-dom-props': 'off',
     'react/forbid-elements': 'off',
     'react/forbid-foreign-prop-types': 'error',
     'react/forbid-prop-types': ['error', {
