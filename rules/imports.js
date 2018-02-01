@@ -10,17 +10,17 @@ module.exports = {
     'import'
   ],
   settings: {
+    'import/core-modules': [],
+    'import/extensions': ['.js'],
+    'import/ignore': [
+      'node_modules',
+      /\.(css|svg|json)$/
+    ],
     'import/resolver': {
       node: {
         extensions: ['.js', '.json']
       }
-    },
-    'import/extensions': ['.js'],
-    'import/core-modules': [],
-    'import/ignore': [
-      'node_modules',
-      /\.(css|svg|json)$/
-    ]
+    }
   },
   rules: {
     'import/default': 'error',
@@ -65,14 +65,14 @@ module.exports = {
     'import/no-nodejs-modules': 'off',
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
-    'import/no-webpack-loader-syntax': 'error',
     'import/no-unassigned-import': ['error', {
       allow: ['*.css']
     }],
     'import/no-unresolved': ['error', {
-      commonjs: true,
-      caseSensitive: true
+      caseSensitive: true,
+      commonjs: true
     }],
+    'import/no-webpack-loader-syntax': 'error',
     'import/order': ['error', {
       groups: [
         'builtin',

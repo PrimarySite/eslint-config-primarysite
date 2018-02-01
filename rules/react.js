@@ -10,14 +10,26 @@ module.exports = {
   },
   rules: {
     'react/boolean-prop-naming': 'off',
+    'react/button-has-type': 'error',
     'react/default-props-match-prop-types': 'error',
+    'react/destructuring-assignment': ['error', 'always'],
     'react/display-name': ['off', {
       ignoreTranspilerName: false
     }],
-    'react/forbid-component-props': 'off',
+    'react/forbid-component-props': ['error', {
+      forbid: ['style']
+    }],
+    'react/forbid-dom-props': ['error', {
+      forbid: ['id']
+    }],
     'react/forbid-elements': 'off',
-    'react/forbid-prop-types': 'off',
     'react/forbid-foreign-prop-types': 'error',
+    'react/forbid-prop-types': ['error', {
+      checkChildContextTypes: true,
+      checkContextTypes: true,
+      forbid: ['any', 'array', 'object']
+    }],
+    'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'error',
     'react/no-children-prop': 'error',
     'react/no-danger': 'error',
@@ -32,6 +44,7 @@ module.exports = {
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
     'react/no-string-refs': 'error',
+    'react/no-this-in-sfc': 'error',
     'react/no-typos': 'error',
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
@@ -46,15 +59,25 @@ module.exports = {
       skipUndeclared: false
     }],
     'react/react-in-jsx-scope': 'error',
-    'react/require-default-props': 'error',
+    'react/require-default-props': ['error', {
+      forbidDefaultForRequired: true
+    }],
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
-    'react/sort-comp': 'error',
+    'react/sort-comp': ['error', {
+      order: [
+        'static-methods',
+        'lifecycle',
+        'everything-else',
+        'render'
+      ]
+    }],
     'react/sort-prop-types': ['error', {
       callbacksLast: false,
       ignoreCase: true,
-      requiredFirst: false
+      requiredFirst: false,
+      sortShapeProp: true
     }],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
@@ -63,7 +86,11 @@ module.exports = {
     'react/jsx-boolean-value': ['error', 'always'],
     'react/jsx-closing-bracket-location': ['error', 'after-props'],
     'react/jsx-closing-tag-location': 'error',
-    'react/jsx-curly-brace-presence': ['error', { 'props': 'never', 'children': 'never' }],
+    'react/jsx-curly-brace-presence': ['error', {
+      children: 'never',
+      props: 'never'
+    }],
+    'react/jsx-child-element-spacing': 'error',
     'react/jsx-curly-spacing': ['error', {
       'children': true,
       'when': 'never'
@@ -92,8 +119,12 @@ module.exports = {
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
+    'react/jsx-one-expression-per-line': 'error',
     'react/jsx-pascal-case': ['error', {
       allowAllCaps: false
+    }],
+    'react/jsx-sort-default-props': ['error', {
+      ignoreCase: true
     }],
     'react/jsx-sort-props': ['error', {
       callbacksLast: false,
@@ -104,17 +135,21 @@ module.exports = {
       reservedFirst: false
     }],
     'react/jsx-tag-spacing': ['error', {
-      closingSlash: 'never',
+      afterOpening: 'never',
+      beforeClosing: 'never',
       beforeSelfClosing: 'always',
-      afterOpening: 'never'
+      closingSlash: 'never'
     }],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': ['error', {
-      arrow: true,
-      assignment: true,
-      declaration: true,
-      return: true
+      arrow: 'parens-new-line',
+      assignment: 'parens-new-line',
+      condition: 'parens-new-line',
+      declaration: 'parens-new-line',
+      logical: 'parens-new-line',
+      prop: 'parens-new-line',
+      return: 'parens-new-line'
     }]
   }
 };
