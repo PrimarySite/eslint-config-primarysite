@@ -23,43 +23,55 @@ module.exports = {
     ]
   },
   rules: {
-    // Static analysis
-    'import/no-unresolved': ['error', {
-      commonjs: true,
-      caseSensitive: true
+    'import/default': 'error',
+    'import/export': 'error',
+    'import/exports-last': 'off',
+    'import/extensions': ['error', 'never', {
+      js: 'never',
+    }],
+    'import/first': ['error', 'absolute-first'],
+    'import/max-dependencies': ['error', {
+      max: 10
     }],
     'import/named': 'error',
-    'import/default': 'error',
     'import/namespace': 'error',
-    'import/no-restricted-paths': 'off',
-    'import/no-absolute-path': 'error',
-    'import/no-dynamic-require': 'error',
-    'import/no-internal-modules': ['off', {
-      allow: [],
+    'import/newline-after-import': ['error', {
+      count: 1
     }],
-    'import/no-webpack-loader-syntax': 'error',
-    // Helpful Warnings
-    'import/export': 'error',
-    'import/no-named-as-default': 'error',
-    'import/no-named-as-default-member': 'error',
+    'import/no-absolute-path': ['error', {
+      amd: true,
+      commonjs: true,
+      esmodule: true
+    }],
+    'import/no-amd': 'error',
+    'import/no-anonymous-default-export': 'error',
+    'import/no-commonjs': 'error',
     'import/no-deprecated': 'off',
+    'import/no-duplicates': 'error',
+    'import/no-dynamic-require': 'error',
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: true,
       optionalDependencies: false,
       peerDependencies: false
     }],
+    'import/no-internal-modules': ['off', {
+      allow: [],
+    }],
     'import/no-mutable-exports': 'error',
-    // Module Systems
-    'import/unambiguous': 'off',
-    'import/no-commonjs': 'error',
-    'import/no-amd': 'error',
-    'import/no-nodejs-modules': 'off',
-    // Style Guide
-    'import/first': ['error', 'absolute-first'],
-    'import/no-duplicates': 'error',
+    'import/no-named-as-default': 'error',
+    'import/no-named-as-default-member': 'error',
+    'import/no-named-default': 'error',
     'import/no-namespace': 'off',
-    'import/extensions': ['error', 'never', {
-      js: 'never',
+    'import/no-nodejs-modules': 'off',
+    'import/no-restricted-paths': 'off',
+    'import/no-self-import': 'error',
+    'import/no-webpack-loader-syntax': 'error',
+    'import/no-unassigned-import': ['error', {
+      allow: ['*.css']
+    }],
+    'import/no-unresolved': ['error', {
+      commonjs: true,
+      caseSensitive: true
     }],
     'import/order': ['error', {
       groups: [
@@ -72,16 +84,7 @@ module.exports = {
       ],
       'newlines-between': 'always'
     }],
-    'import/newline-after-import': ['error', {
-      count: 1
-    }],
     'import/prefer-default-export': 'error',
-    'import/max-dependencies': ['error', {
-      max: 10
-    }],
-    // Hopefully we can turn this on when we can whitelist .css
-    // https://github.com/benmosher/eslint-plugin-import/issues/671
-    'import/no-unassigned-import': 'off',
-    'import/no-named-default': 'error'
+    'import/unambiguous': 'off'
   }
 };
