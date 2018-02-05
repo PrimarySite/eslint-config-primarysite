@@ -6,7 +6,7 @@ module.exports = {
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'class-methods-use-this': 'off',
-    'complexity': ['error', 5],
+    'complexity': ['error', 8],
     'consistent-return': 'error',
     'curly': ['error', 'all'],
     'dot-location': ['error', 'property'],
