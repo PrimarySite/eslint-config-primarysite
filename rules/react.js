@@ -103,7 +103,7 @@ module.exports = {
     }],
     'react/jsx-indent': ['error', 2],
     'react/jsx-key': 'error',
-    'react/jsx-max-depth': ['error', { max: 3 }],
+    'react/jsx-max-depth': ['error', { max: 4 }],
     'react/jsx-max-props-per-line': ['error', {
       maximum: 1,
       when: 'multiline'
