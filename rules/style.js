@@ -161,7 +161,8 @@ module.exports = {
       prev: '*',
       next: [
         'block-like', 'case', 'cjs-export', 'class', 'default', 'do', 'export', 'for',
-        'function', 'if', 'multiline-block-like', 'return', 'switch', 'try', 'while', 'with'
+        'function', 'if', 'multiline-block-like', 'multiline-expression', 'return', 'switch',
+        'try', 'while', 'with'
       ]
     }, {
       blankLine: 'never',
@@ -169,7 +170,10 @@ module.exports = {
       next: 'directive'
     }, {
       blankLine: 'always',
-      prev: ['block-like', 'cjs-import', 'const', 'directive', 'let', 'multiline-block-like'],
+      prev: [
+        'block-like', 'cjs-import', 'const', 'directive', 'let', 'multiline-block-like',
+        'multiline-expression'
+      ],
       next: '*'
     }, {
       blankLine: 'never',

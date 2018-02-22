@@ -11,7 +11,7 @@
   "homepage": "https://github.com/PrimarySite/eslint-config-primarysite",
   "keywords": ["style guide", "lint", "eslint", "eslintconfig", "es6", "es2015", "react", "jsx"],
   "peerDependencies": {
-    "eslint": "^4.16.0"
+    "eslint": "^4.18.0"
   },
   "dependencies": {
     "eslint-config-prettier": "~2.9.0",
