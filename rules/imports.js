@@ -30,6 +30,7 @@ module.exports = {
       js: 'never',
     }],
     'import/first': ['error', 'absolute-first'],
+    'import/group-exports': 'error',
     'import/max-dependencies': ['error', {
       max: 10
     }],
@@ -46,6 +47,7 @@ module.exports = {
     'import/no-amd': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/no-commonjs': 'error',
+    'import/no-default-export': 'error',
     'import/no-deprecated': 'off',
     'import/no-duplicates': 'error',
     'import/no-dynamic-require': 'error',
@@ -65,6 +67,7 @@ module.exports = {
     'import/no-nodejs-modules': 'off',
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
+    'import/no-useless-path-segments': 'error',
     'import/no-unassigned-import': ['error', {
       allow: ['*.css']
     }],
@@ -84,7 +87,7 @@ module.exports = {
       ],
       'newlines-between': 'always'
     }],
-    'import/prefer-default-export': 'error',
+    'import/prefer-default-export': 'off',
     'import/unambiguous': 'off'
   }
 };
