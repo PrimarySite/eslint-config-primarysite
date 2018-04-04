@@ -47,6 +47,11 @@ module.exports = {
     'import/no-amd': 'error',
     'import/no-anonymous-default-export': 'error',
     'import/no-commonjs': 'error',
+    'import/no-cycle': ['error', {
+      amd: true,
+      commonjs: true,
+      maxDepth: 'Infinity'
+    }],
     'import/no-default-export': 'error',
     'import/no-deprecated': 'off',
     'import/no-duplicates': 'error',
@@ -72,6 +77,7 @@ module.exports = {
       allow: ['*.css']
     }],
     'import/no-unresolved': ['error', {
+      amd: true,
       caseSensitive: true,
       commonjs: true
     }],
