@@ -49,8 +49,7 @@ module.exports = {
     'import/no-commonjs': 'error',
     'import/no-cycle': ['error', {
       amd: true,
-      commonjs: true,
-      maxDepth: 'Infinity'
+      commonjs: true
     }],
     'import/no-default-export': 'error',
     'import/no-deprecated': 'off',
