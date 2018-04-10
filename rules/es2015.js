@@ -3,7 +3,7 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2018,
     sourceType: 'module'
   },
   rules: {
@@ -28,7 +28,7 @@ module.exports = {
     }],
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
-    // replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
+    // Replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'no-duplicate-imports': 'off',
     'no-new-symbol': 'error',
     'no-restricted-imports': 'off',

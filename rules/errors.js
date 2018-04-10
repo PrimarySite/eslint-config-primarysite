@@ -1,5 +1,12 @@
 module.exports = {
   rules: {
+    'for-direction': 'error',
+    'getter-return': ['error', {
+      allowImplicit: false
+    }],
+    'no-constant-condition': ['error', {
+      checkLoops: true
+    }],
     'no-cond-assign': ['error', 'always'],
     'no-dupe-args': 'error',
     'no-dupe-keys': 'error',
