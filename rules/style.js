@@ -165,41 +165,41 @@ module.exports = {
         'try', 'while', 'with'
       ]
     }, {
-        blankLine: 'never',
-        prev: '*',
-        next: 'directive'
-      }, {
-        blankLine: 'always',
-        prev: [
-          'block-like', 'cjs-import', 'const', 'directive', 'let', 'multiline-block-like',
-          'multiline-expression'
-        ],
-        next: '*'
-      }, {
-        blankLine: 'never',
-        prev: 'return',
-        next: '*'
-      }, {
-        blankLine: 'always',
-        prev: 'break',
-        next: 'case'
-      }, {
-        blankLine: 'never',
-        prev: 'directive',
-        next: 'directive'
-      }, {
-        blankLine: 'never',
-        prev: 'case',
-        next: 'return'
-      }, {
-        blankLine: 'never',
-        prev: 'switch',
-        next: 'case'
-      }, {
-        blankLine: 'any',
-        prev: ['const', 'let', 'var'],
-        next: ['const', 'let', 'var']
-      }],
+      blankLine: 'never',
+      prev: '*',
+      next: 'directive'
+    }, {
+      blankLine: 'always',
+      prev: [
+        'block-like', 'cjs-import', 'const', 'directive', 'let', 'multiline-block-like',
+        'multiline-expression'
+      ],
+      next: '*'
+    }, {
+      blankLine: 'never',
+      prev: 'return',
+      next: '*'
+    }, {
+      blankLine: 'always',
+      prev: 'break',
+      next: 'case'
+    }, {
+      blankLine: 'never',
+      prev: 'directive',
+      next: 'directive'
+    }, {
+      blankLine: 'never',
+      prev: 'case',
+      next: 'return'
+    }, {
+      blankLine: 'never',
+      prev: 'switch',
+      next: 'case'
+    }, {
+      blankLine: 'any',
+      prev: ['const', 'let', 'var'],
+      next: ['const', 'let', 'var']
+    }],
     'quote-props': ['error', 'as-needed', {
       keywords: false,
       numbers: false,
