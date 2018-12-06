@@ -7,7 +7,7 @@ module.exports = {
       'error',
       {
         jsxBracketSameLine: true,
-        printWidth: 99,
+        printWidth: 100,
         singleQuote: true
       }
     ]
