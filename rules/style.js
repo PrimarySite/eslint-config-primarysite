@@ -13,6 +13,7 @@ module.exports = {
       properties: 'always'
     }],
     'capitalized-comments': ['error', 'always', {
+      ignorePattern: "webpackChunkName",
       ignoreConsecutiveComments: true
     }],
     'comma-dangle': ['error', 'never'],
