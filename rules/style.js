@@ -13,6 +13,7 @@ module.exports = {
       properties: 'always'
     }],
     'capitalized-comments': ['error', 'always', {
+      ignorePattern: "webpackChunkName",
       ignoreConsecutiveComments: true
     }],
     'comma-dangle': ['error', 'never'],
@@ -78,7 +79,7 @@ module.exports = {
       max: 4
     }],
     'max-len': ['error', {
-      code: 99,
+      code: 100,
       comments: 79,
       ignoreRegExpLiterals: true,
       ignoreUrls: true
