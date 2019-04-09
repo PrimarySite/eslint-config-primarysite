@@ -1,11 +1,10 @@
 module.exports = {
-  plugins: [
-    'prettier',
-  ],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
       'error',
       {
+        endOfLine: 'lf',
         jsxBracketSameLine: true,
         printWidth: 100,
         singleQuote: true
