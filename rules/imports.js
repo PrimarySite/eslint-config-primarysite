@@ -23,7 +23,7 @@ module.exports = {
     'import/dynamic-import-chunkname': [
       'error',
       {
-        webpackChunknameFormat: '[a-zA-Z]'
+        webpackChunknameFormat: '[a-zA-Z]+'
       }
     ],
     'import/export': 'error',
