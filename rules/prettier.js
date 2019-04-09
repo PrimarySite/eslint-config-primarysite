@@ -5,6 +5,7 @@ module.exports = {
       'error',
       {
         endOfLine: 'lf',
+        htmlWhitespaceSensitivity: 'strict',
         jsxBracketSameLine: true,
         printWidth: 100,
         singleQuote: true
