@@ -20,7 +20,7 @@ module.exports = {
       'error',
       {
         controlComponents: ['ElementType'],
-        depth: 2
+        depth: 3
       }
     ],
     'jsx-a11y/heading-has-content': 'error',
@@ -31,9 +31,9 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': [
       'error',
       {
-        assert: 'either',
+        assert: 'both',
         controlComponents: ['ElementType'],
-        depth: 2
+        depth: 3
       }
     ],
     'jsx-a11y/lang': 'error',
