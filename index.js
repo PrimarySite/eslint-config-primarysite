@@ -7,6 +7,7 @@ const rules = [
   './rules/prettier',
   './rules/react',
   './rules/react-a11y',
+  './rules/react-hooks',
   './rules/style',
   './rules/tests',
   './rules/variables'
