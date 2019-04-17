@@ -7,7 +7,12 @@ module.exports = {
       }
     ],
     'array-bracket-spacing': ['error', 'never'],
-    'array-element-newline': 'off',
+    'array-element-newline': [
+      'error',
+      {
+        multiline: true
+      }
+    ],
     'block-spacing': ['error', 'always'],
     'brace-style': [
       'error',
@@ -46,6 +51,7 @@ module.exports = {
       'error',
       'always',
       {
+        considerPropertyDescriptor: true,
         includeCommonJSModuleExports: true
       }
     ],
@@ -131,6 +137,15 @@ module.exports = {
       }
     ],
     'max-lines': ['error', 500],
+    'max-lines-per-function': [
+      'error',
+      {
+        IIFEs: true,
+        max: 50,
+        skipBlankLines: false,
+        skipComments: true
+      }
+    ],
     'max-nested-callbacks': ['error', 3],
     'max-params': ['error', 4],
     'max-statements': ['error', 15],
@@ -188,7 +203,12 @@ module.exports = {
       }
     ],
     'no-restricted-syntax': 'off',
-    'no-tabs': 'error',
+    'no-tabs': [
+      'error',
+      {
+        allowIndentationTabs: false
+      }
+    ],
     'no-ternary': 'off',
     'no-trailing-spaces': [
       'error',
@@ -229,13 +249,7 @@ module.exports = {
       }
     ],
     'object-property-newline': 'error',
-    'one-var': [
-      'error',
-      {
-        initialized: 'never',
-        uninitialized: 'never'
-      }
-    ],
+    'one-var': ['error', 'always'],
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': ['error', 'never'],
     'operator-linebreak': ['error', 'after'],
@@ -256,6 +270,7 @@ module.exports = {
           'for',
           'function',
           'if',
+          'iife',
           'multiline-block-like',
           'multiline-expression',
           'return',
@@ -314,6 +329,7 @@ module.exports = {
         next: ['const', 'let', 'var']
       }
     ],
+    'prefer-object-spread': 'error',
     'quote-props': [
       'error',
       'as-needed',

@@ -140,8 +140,8 @@ module.exports = {
       'error',
       2,
       {
-        checkAttributes: true,
-        indentLogicalExpressions: true
+        checkAttributes: true
+        // indentLogicalExpressions: true
       }
     ],
     'react/jsx-indent-props': ['error', 2],

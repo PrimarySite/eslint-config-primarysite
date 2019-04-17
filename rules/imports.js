@@ -103,10 +103,10 @@ module.exports = {
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
     'import/no-useless-path-segments': [
-      'error',
-      {
-        noUselessIndex: true
-      }
+      'error'
+      // {
+      //   noUselessIndex: true
+      // }
     ],
     'import/no-unassigned-import': [
       'error',
