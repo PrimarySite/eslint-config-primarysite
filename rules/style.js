@@ -249,7 +249,7 @@ module.exports = {
       }
     ],
     'object-property-newline': 'error',
-    'one-var': ['error', 'always'],
+    'one-var': ['error', 'never'],
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': ['error', 'never'],
     'operator-linebreak': ['error', 'after'],
@@ -347,7 +347,6 @@ module.exports = {
         allowTemplateLiterals: true
       }
     ],
-    'require-jsdoc': 'off',
     semi: ['error', 'always'],
     'semi-spacing': [
       'error',

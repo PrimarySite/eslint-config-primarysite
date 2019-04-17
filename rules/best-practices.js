@@ -89,15 +89,16 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
+    'no-useless-catch': 'error',
     'no-useless-concat': 'error',
     'no-useless-escape': 'error',
     'no-useless-return': 'error',
     'no-void': 'error',
     'no-warning-comments': [
-      'error',
-      {
-        ignoreDestructuring: false
-      }
+      'error'
+      // {
+      //   ignoreDestructuring: false
+      // }
     ],
     'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
