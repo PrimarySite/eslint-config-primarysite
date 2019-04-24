@@ -102,11 +102,12 @@ module.exports = {
     'import/no-relative-parent-imports': 'off',
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
+    'import/no-unused-modules': 'off',
     'import/no-useless-path-segments': [
-      'error'
-      // {
-      //   noUselessIndex: true
-      // }
+      'error',
+      {
+        noUselessIndex: true
+      }
     ],
     'import/no-unassigned-import': [
       'error',

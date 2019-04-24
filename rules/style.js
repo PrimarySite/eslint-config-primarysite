@@ -56,7 +56,13 @@ module.exports = {
       }
     ],
     'func-names': ['error', 'as-needed'],
-    'func-style': 'off',
+    'func-style': [
+      'error',
+      'declaration',
+      {
+        allowArrowFunctions: true
+      }
+    ],
     'function-paren-newline': ['error', 'multiline'],
     'id-blacklist': ['error', 'id'],
     'id-length': [
