@@ -51,6 +51,13 @@ module.exports = {
       'error',
       'always',
       {
+        considerPropertyDescriptor: true
+      }
+    ],
+    'func-name-matching': [
+      'error',
+      'always',
+      {
         considerPropertyDescriptor: true,
         includeCommonJSModuleExports: true
       }
