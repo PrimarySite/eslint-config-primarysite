@@ -413,5 +413,15 @@ module.exports = {
     'template-tag-spacing': 'error',
     'unicode-bom': ['error', 'never'],
     'wrap-regex': 'off'
-  }
+  },
+  overrides: [
+    {
+      files: '*.test.js',
+      rules: {
+        'max-lines': 'off',
+        'max-lines-per-function': 'off',
+        'max-statements': 'off'
+      }
+    }
+  ]
 };
