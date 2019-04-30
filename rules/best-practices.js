@@ -101,7 +101,8 @@ module.exports = {
       // }
     ],
     'no-with': 'error',
-    'prefer-named-capture-group': 'error',
+    // Turn this back on when we support Node 10
+    'prefer-named-capture-group': 'off',
     'prefer-promise-reject-errors': 'error',
     radix: ['error', 'as-needed'],
     'require-await': 'error',

@@ -6,7 +6,9 @@ module.exports = {
     }
   },
   settings: {
-    version: 'detect'
+    react: {
+      version: 'detect'
+    }
   },
   rules: {
     'react/boolean-prop-naming': 'off',
