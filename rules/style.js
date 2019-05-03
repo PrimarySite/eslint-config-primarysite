@@ -154,7 +154,7 @@ module.exports = {
       'error',
       {
         IIFEs: true,
-        max: 50,
+        max: 100,
         skipBlankLines: false,
         skipComments: true
       }
