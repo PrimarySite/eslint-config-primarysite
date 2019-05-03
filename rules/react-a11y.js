@@ -20,6 +20,7 @@ module.exports = {
       'error',
       {
         controlComponents: ['ElementType'],
+        ignoreElements: ['input', 'textarea'],
         depth: 3
       }
     ],
@@ -53,5 +54,13 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 'error',
     'jsx-a11y/scope': 'error',
     'jsx-a11y/tabindex-no-positive': 'error'
-  }
+  },
+  overrides: [
+    {
+      files: '*.test.js',
+      rules: {
+        'jsx-a11y/control-has-associated-label': 'off'
+      }
+    }
+  ]
 };
