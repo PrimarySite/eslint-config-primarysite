@@ -112,7 +112,7 @@ module.exports = {
     'import/no-unassigned-import': [
       'error',
       {
-        allow: ['*.css']
+        allow: ['**/*.css']
       }
     ],
     'import/no-unresolved': [

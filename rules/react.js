@@ -108,7 +108,7 @@ module.exports = {
       }
     ],
     'react/state-in-constructor': ['error', 'always'],
-    'react/static-property-placement': 'error',
+    'react/static-property-placement': ['error', 'property assignment'],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
 
