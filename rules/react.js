@@ -47,7 +47,12 @@ module.exports = {
     'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
-    'react/no-string-refs': 'error',
+    'react/no-string-refs': [
+      'error',
+      {
+        noTemplateLiterals: true
+      }
+    ],
     'react/no-this-in-sfc': 'error',
     'react/no-typos': 'error',
     'react/no-unescaped-entities': [
@@ -67,6 +72,7 @@ module.exports = {
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': ['error', 'disallow-in-func'],
     'react/prefer-es6-class': ['error', 'always'],
+    'react/prefer-read-only-props': 'off',
     'react/prefer-stateless-function': 'error',
     'react/prop-types': [
       'error',
@@ -101,6 +107,8 @@ module.exports = {
         sortShapeProp: true
       }
     ],
+    'react/state-in-constructor': ['error', 'always'],
+    'react/static-property-placement': 'error',
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
 
@@ -142,8 +150,8 @@ module.exports = {
       'error',
       2,
       {
-        checkAttributes: true
-        // indentLogicalExpressions: true
+        checkAttributes: true,
+        indentLogicalExpressions: true
       }
     ],
     'react/jsx-indent-props': ['error', 2],
@@ -184,6 +192,7 @@ module.exports = {
       }
     ],
     'react/jsx-props-no-multi-spaces': 'error',
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-sort-default-props': [
       'error',
       {

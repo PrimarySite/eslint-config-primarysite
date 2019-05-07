@@ -94,12 +94,7 @@ module.exports = {
     'no-useless-escape': 'error',
     'no-useless-return': 'error',
     'no-void': 'error',
-    'no-warning-comments': [
-      'error'
-      // {
-      //   ignoreDestructuring: false
-      // }
-    ],
+    'no-warning-comments': 'error',
     'no-with': 'error',
     // Turn this back on when we support Node 10
     'prefer-named-capture-group': 'off',
