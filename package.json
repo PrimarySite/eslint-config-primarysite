@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-primarysite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "PrimarySite's approach to JavaScript.",
   "repository": "https://github.com/PrimarySite/eslint-config-primarysite.git",
   "license": "MIT",
