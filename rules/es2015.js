@@ -3,29 +3,46 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
     sourceType: 'module'
   },
   rules: {
-    'arrow-body-style': ['error', 'as-needed', {
-      requireReturnForObjectLiteral: false,
-    }],
-    'arrow-parens': ['error', 'as-needed', {
-      requireForBlockBody: false,
-    }],
-    'arrow-spacing': ['error', {
-      before: true,
-      after: true
-    }],
+    'arrow-body-style': [
+      'error',
+      'as-needed',
+      {
+        requireReturnForObjectLiteral: false
+      }
+    ],
+    'arrow-parens': [
+      'error',
+      'as-needed',
+      {
+        requireForBlockBody: false
+      }
+    ],
+    'arrow-spacing': [
+      'error',
+      {
+        before: true,
+        after: true
+      }
+    ],
     'constructor-super': 'error',
-    'generator-star-spacing': ['error', {
-      after: false,
-      before: true
-    }],
+    'generator-star-spacing': [
+      'error',
+      {
+        after: false,
+        before: true
+      }
+    ],
     'no-class-assign': 'error',
-    'no-confusing-arrow': ['error', {
-      allowParens: true
-    }],
+    'no-confusing-arrow': [
+      'error',
+      {
+        allowParens: true
+      }
+    ],
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     // Replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
@@ -35,23 +52,41 @@ module.exports = {
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
-    'no-useless-rename': ['error', {
-      ignoreDestructuring: false,
-      ignoreImport: false,
-      ignoreExport: false,
-    }],
+    'no-useless-rename': [
+      'error',
+      {
+        ignoreDestructuring: false,
+        ignoreImport: false,
+        ignoreExport: false
+      }
+    ],
     'no-var': 'off',
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true
+      }
+    ],
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true
+      }
+    ],
     'prefer-const': 'error',
-    'prefer-destructuring': ['error', {
-      array: true,
-      object: true
-    }, {
-      enforceForRenamedProperties: false
-    }],
+    'prefer-destructuring': [
+      'error',
+      {
+        array: true,
+        object: true
+      },
+      {
+        enforceForRenamedProperties: false
+      }
+    ],
     'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',

@@ -1,13 +1,14 @@
 module.exports = {
-  plugins: [
-    'prettier',
-  ],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
       'error',
       {
+        endOfLine: 'lf',
+        htmlWhitespaceSensitivity: 'strict',
         jsxBracketSameLine: true,
-        printWidth: 99,
+        printWidth: 100,
+        quoteProps: 'as-needed',
         singleQuote: true
       }
     ]
