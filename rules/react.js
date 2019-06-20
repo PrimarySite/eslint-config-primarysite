@@ -95,7 +95,37 @@ module.exports = {
     'react/sort-comp': [
       'error',
       {
-        order: ['static-methods', 'lifecycle', 'everything-else', 'render']
+        order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
+        groups: {
+          lifecycle: [
+            'constructor',
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'mixins',
+            'statics',
+            'defaultProps',
+            'getDefaultProps',
+            'state',
+            'getInitialState',
+            'getChildContext',
+            'getDerivedStateFromError',
+            'getDerivedStateFromProps',
+            'componentWillMount',
+            'UNSAFE_componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'UNSAFE_componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'UNSAFE_componentWillUpdate',
+            'getSnapshotBeforeUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount'
+          ]
+        }
       }
     ],
     'react/sort-prop-types': [
