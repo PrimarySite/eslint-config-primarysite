@@ -39,7 +39,7 @@ module.exports = {
     'react/no-danger': 'error',
     'react/no-danger-with-children': 'error',
     'react/no-deprecated': 'error',
-    'react/no-did-mount-set-state': 'error',
+    'react/no-did-mount-set-state': 'off',
     'react/no-did-update-set-state': ['error', 'disallow-in-func'],
     'react/no-direct-mutation-state': 'error',
     'react/no-find-dom-node': 'error',
@@ -95,7 +95,37 @@ module.exports = {
     'react/sort-comp': [
       'error',
       {
-        order: ['static-methods', 'lifecycle', 'everything-else', 'render']
+        order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
+        groups: {
+          lifecycle: [
+            'constructor',
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'mixins',
+            'statics',
+            'defaultProps',
+            'getDefaultProps',
+            'state',
+            'getInitialState',
+            'getChildContext',
+            'getDerivedStateFromError',
+            'getDerivedStateFromProps',
+            'componentWillMount',
+            'UNSAFE_componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'UNSAFE_componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'UNSAFE_componentWillUpdate',
+            'getSnapshotBeforeUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount'
+          ]
+        }
       }
     ],
     'react/sort-prop-types': [
