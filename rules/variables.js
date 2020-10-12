@@ -1,7 +1,4 @@
 module.exports = {
-  env: {
-    browser: true
-  },
   rules: {
     'init-declarations': ['error', 'always'],
     'no-delete-var': 'error',

@@ -13,6 +13,29 @@ const rules = [
   './rules/variables'
 ].map(require.resolve);
 
+const config = {
+  env: {
+    browser: true,
+    'cypress/globals': true,
+    es6: true,
+    jest: true,
+    node: true
+  },
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2021,
+    sourceType: 'module'
+  }
+};
+
 module.exports = {
-  extends: [...rules, 'prettier', 'prettier/react']
+  extends: [
+    ...config,
+    ...rules,
+    'prettier',
+    'prettier/react'
+  ]
 };

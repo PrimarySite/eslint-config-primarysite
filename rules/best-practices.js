@@ -96,8 +96,7 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'error',
     'no-with': 'error',
-    // Turn this back on when we support Node 10
-    'prefer-named-capture-group': 'off',
+    'prefer-named-capture-group': 'error',
     'prefer-promise-reject-errors': 'error',
     radix: ['error', 'as-needed'],
     'require-await': 'error',

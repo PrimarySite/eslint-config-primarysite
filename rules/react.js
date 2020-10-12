@@ -1,10 +1,5 @@
 module.exports = {
   plugins: ['react'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   settings: {
     react: {
       version: 'detect'

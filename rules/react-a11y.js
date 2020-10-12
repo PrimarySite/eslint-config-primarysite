@@ -1,10 +1,5 @@
 module.exports = {
   plugins: ['jsx-a11y'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   rules: {
     'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'error',

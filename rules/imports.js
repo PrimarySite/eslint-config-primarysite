@@ -1,12 +1,4 @@
 module.exports = {
-  env: {
-    es6: true
-  },
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 2019,
-    sourceType: 'module'
-  },
   plugins: ['import'],
   settings: {
     'import/core-modules': [],
@@ -37,12 +29,7 @@ module.exports = {
     ],
     'import/first': ['error', 'absolute-first'],
     'import/group-exports': 'error',
-    'import/max-dependencies': [
-      'error',
-      {
-        max: 10
-      }
-    ],
+    'import/max-dependencies': 'off',
     'import/named': 'error',
     'import/namespace': [
       'error',
