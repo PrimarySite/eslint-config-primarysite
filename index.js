@@ -16,7 +16,6 @@ const rules = [
 const config = {
   env: {
     browser: true,
-    'cypress/globals': true,
     es6: true,
     jest: true,
     node: true
@@ -32,8 +31,8 @@ const config = {
 };
 
 module.exports = {
+  ...config,
   extends: [
-    ...config,
     ...rules,
     'prettier',
     'prettier/react'

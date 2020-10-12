@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    'cypress/globals': true
+  },
   plugins: ['cypress'],
   rules: {
     'cypress/assertion-before-screenshot': 'error',
