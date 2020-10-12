@@ -20,7 +20,6 @@ const config = {
     jest: true,
     node: true
   },
-  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
