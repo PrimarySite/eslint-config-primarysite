@@ -22,6 +22,7 @@ const config = {
   },
   parserOptions: {
     ecmaFeatures: {
+      globalReturn: false,
       jsx: true
     },
     ecmaVersion: 2021,
@@ -35,5 +36,6 @@ module.exports = {
     ...rules,
     'prettier',
     'prettier/react'
-  ]
+  ],
+  reportUnusedDisableDirectives: true
 };

@@ -51,13 +51,6 @@ module.exports = {
       'error',
       'always',
       {
-        considerPropertyDescriptor: true
-      }
-    ],
-    'func-name-matching': [
-      'error',
-      'always',
-      {
         considerPropertyDescriptor: true,
         includeCommonJSModuleExports: true
       }
@@ -70,6 +63,7 @@ module.exports = {
         allowArrowFunctions: true
       }
     ],
+    'function-call-argument-newline': ['error', 'consistent'],
     'function-paren-newline': ['error', 'multiline'],
     'id-blacklist': ['error', 'id'],
     'id-length': [
@@ -178,7 +172,7 @@ module.exports = {
         properties: true
       }
     ],
-    'new-parens': 'error',
+    'new-parens': ['error', 'always'],
     'newline-per-chained-call': [
       'error',
       {
