@@ -155,7 +155,7 @@ module.exports = {
       }
     ],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-key': 'error',
+    'react/jsx-key': ['error', { checkFragmentShorthand: true }],
     'react/jsx-max-depth': ['error', { max: 4 }],
     'react/jsx-max-props-per-line': [
       'error',
