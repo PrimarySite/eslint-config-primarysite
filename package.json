@@ -22,7 +22,7 @@
     "jsx"
   ],
   "peerDependencies": {
-    "eslint": "~6.3.0"
+    "eslint": "~6.7.2"
   },
   "dependencies": {
     "eslint-config-prettier": "~4.2.0",

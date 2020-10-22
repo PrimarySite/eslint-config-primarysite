@@ -12,37 +12,16 @@ module.exports = {
   },
   rules: {
     'import/default': 'error',
-    'import/dynamic-import-chunkname': [
-      'error',
-      {
-        webpackChunknameFormat: '[a-zA-Z]+'
-      }
-    ],
+    'import/dynamic-import-chunkname': ['error', { webpackChunknameFormat: '[a-zA-Z]+' }],
     'import/export': 'error',
     'import/exports-last': 'off',
-    'import/extensions': [
-      'error',
-      'never',
-      {
-        js: 'never'
-      }
-    ],
+    'import/extensions': ['error', 'never', { js: 'never' }],
     'import/first': ['error', 'absolute-first'],
     'import/group-exports': 'error',
     'import/max-dependencies': 'off',
     'import/named': 'error',
-    'import/namespace': [
-      'error',
-      {
-        allowComputed: false
-      }
-    ],
-    'import/newline-after-import': [
-      'error',
-      {
-        count: 1
-      }
-    ],
+    'import/namespace': ['error', { allowComputed: false }],
+    'import/newline-after-import': ['error', { count: 1 }],
     'import/no-absolute-path': [
       'error',
       {
@@ -73,12 +52,7 @@ module.exports = {
         peerDependencies: true
       }
     ],
-    'import/no-internal-modules': [
-      'off',
-      {
-        allow: []
-      }
-    ],
+    'import/no-internal-modules': ['off', { allow: [] }],
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
@@ -90,18 +64,8 @@ module.exports = {
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
     'import/no-unused-modules': 'off',
-    'import/no-useless-path-segments': [
-      'error',
-      {
-        noUselessIndex: true
-      }
-    ],
-    'import/no-unassigned-import': [
-      'error',
-      {
-        allow: ['**/*.css']
-      }
-    ],
+    'import/no-useless-path-segments': ['error', { noUselessIndex: true }],
+    'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }],
     'import/no-unresolved': [
       'error',
       {

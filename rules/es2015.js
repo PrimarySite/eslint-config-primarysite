@@ -30,12 +30,7 @@ module.exports = {
       }
     ],
     'no-class-assign': 'error',
-    'no-confusing-arrow': [
-      'error',
-      {
-        allowParens: true
-      }
-    ],
+    'no-confusing-arrow': ['error', { allowParens: true }],
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     // Replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
@@ -43,7 +38,7 @@ module.exports = {
     'no-new-symbol': 'error',
     'no-restricted-imports': 'off',
     'no-this-before-super': 'error',
-    'no-useless-computed-key': 'error',
+    'no-useless-computed-key': ['error', { enforceForClassMembers: true }],
     'no-useless-constructor': 'error',
     'no-useless-rename': [
       'error',
@@ -53,7 +48,7 @@ module.exports = {
         ignoreExport: false
       }
     ],
-    'no-var': 'off',
+    'no-var': 'error',
     'object-shorthand': [
       'error',
       'always',
@@ -87,7 +82,7 @@ module.exports = {
     'require-yield': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'symbol-description': 'error',
-    'sort-imports': ['off'],
+    'sort-imports': 'off',
     'template-curly-spacing': 'error',
     'yield-star-spacing': ['error', 'before']
   }

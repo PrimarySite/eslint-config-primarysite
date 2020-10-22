@@ -16,13 +16,12 @@ const rules = [
 const config = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
     jest: true,
     node: true
   },
   parserOptions: {
     ecmaFeatures: {
-      globalReturn: false,
       jsx: true
     },
     ecmaVersion: 2021,
@@ -32,10 +31,6 @@ const config = {
 
 module.exports = {
   ...config,
-  extends: [
-    ...rules,
-    'prettier',
-    'prettier/react'
-  ],
+  extends: [...rules, 'prettier', 'prettier/react'],
   reportUnusedDisableDirectives: true
 };
