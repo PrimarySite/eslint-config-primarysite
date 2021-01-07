@@ -1,7 +1,4 @@
 module.exports = {
-  env: {
-    node: true
-  },
   rules: {
     'handle-callback-err': 'error',
     'no-buffer-constructor': 'error',

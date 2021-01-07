@@ -1,10 +1,5 @@
 module.exports = {
   plugins: ['jsx-a11y'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   rules: {
     'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'error',
@@ -15,10 +10,17 @@ module.exports = {
     'jsx-a11y/aria-proptypes': 'error',
     'jsx-a11y/aria-role': 'error',
     'jsx-a11y/aria-unsupported-elements': 'error',
+    'jsx-a11y/autocomplete-valid': [
+      'error',
+      {
+        inputComponents: ['form', 'Form', 'FormElement', 'input', 'select', 'textarea']
+      }
+    ],
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/control-has-associated-label': [
       'error',
       {
+        // 'ElementType' is used in the component library within the 'FormElement' component.
         controlComponents: ['ElementType'],
         ignoreElements: ['input', 'textarea'],
         depth: 3
@@ -33,13 +35,14 @@ module.exports = {
       'error',
       {
         assert: 'both',
+        // 'ElementType' is used in the component library within the 'FormElement' component.
         controlComponents: ['ElementType'],
         depth: 3
       }
     ],
     'jsx-a11y/lang': 'error',
     'jsx-a11y/media-has-caption': 'off',
-    'jsx-a11y/mouse-events-have-key-events': 'off',
+    'jsx-a11y/mouse-events-have-key-events': 'error',
     'jsx-a11y/no-access-key': 'error',
     'jsx-a11y/no-autofocus': 'error',
     'jsx-a11y/no-distracting-elements': 'error',

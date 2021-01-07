@@ -13,6 +13,24 @@ const rules = [
   './rules/variables'
 ].map(require.resolve);
 
+const config = {
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+    node: true
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2021,
+    sourceType: 'module'
+  }
+};
+
 module.exports = {
-  extends: [...rules, 'prettier', 'prettier/react']
+  ...config,
+  extends: [...rules, 'prettier', 'prettier/react'],
+  reportUnusedDisableDirectives: true
 };

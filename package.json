@@ -1,6 +1,9 @@
 {
   "name": "eslint-config-primarysite",
   "version": "2.0.0",
+  "engines": {
+    "node": "^12.18"
+  },
   "description": "PrimarySite's approach to JavaScript.",
   "repository": "https://github.com/PrimarySite/eslint-config-primarysite.git",
   "license": "MIT",
@@ -19,16 +22,15 @@
     "jsx"
   ],
   "peerDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "~6.8.0"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.2",
     "eslint-config-prettier": "~4.2.0",
     "eslint-plugin-cypress": "^2.7.0",
     "eslint-plugin-import": "~2.18.2",
-    "eslint-plugin-jsx-a11y": "~6.2.3",
-    "eslint-plugin-prettier": "~3.1.0",
-    "eslint-plugin-react": "~7.13.0",
+    "eslint-plugin-jsx-a11y": "~6.3.1",
+    "eslint-plugin-prettier": "~3.1.4",
+    "eslint-plugin-react": "~7.14.3",
     "eslint-plugin-react-hooks": "~1.6.1",
     "prettier": "~1.18.2"
   }

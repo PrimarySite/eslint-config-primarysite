@@ -1,7 +1,4 @@
 module.exports = {
-  env: {
-    browser: true
-  },
   rules: {
     'init-declarations': ['error', 'always'],
     'no-delete-var': 'error',
@@ -14,12 +11,7 @@ module.exports = {
       }
     ],
     'no-shadow-restricted-names': 'error',
-    'no-undef': [
-      'error',
-      {
-        typeof: true
-      }
-    ],
+    'no-undef': ['error', { typeof: true }],
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unused-vars': [

@@ -3,31 +3,30 @@ module.exports = {
     'accessor-pairs': [
       'error',
       {
+        enforceForClassMembers: true,
         getWithoutSet: true
       }
     ],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'class-methods-use-this': 'off',
+    'class-methods-use-this': 'error',
     complexity: ['error', 8],
     'consistent-return': 'error',
     curly: ['error', 'all'],
+    'default-param-last': 'error',
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
     eqeqeq: ['error', 'always'],
+    'grouped-accessor-pairs': 'off',
     'guard-for-in': 'error',
     'max-classes-per-file': 'error',
     'no-alert': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
+    'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'error',
-    'no-empty-function': [
-      'error',
-      {
-        allow: ['arrowFunctions']
-      }
-    ],
+    'no-empty-function': ['error', { allow: ['arrowFunctions'] }],
     'no-empty-pattern': 'error',
     'no-eq-null': 'error',
     'no-eval': 'error',
@@ -36,7 +35,7 @@ module.exports = {
     'no-fallthrough': 'error',
     'no-floating-decimal': 'error',
     'no-global-assign': 'error',
-    'no-implicit-globals': 'error',
+    'no-implicit-globals': ['error', { lexicalBindings: true }],
     'no-implied-eval': 'error',
     'no-invalid-this': 'error',
     'no-iterator': 'error',
@@ -61,28 +60,13 @@ module.exports = {
     'no-new-wrappers': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
-    'no-param-reassign': [
-      'error',
-      {
-        props: true
-      }
-    ],
+    'no-param-reassign': ['error', { props: true }],
     'no-proto': 'error',
-    'no-redeclare': [
-      'error',
-      {
-        builtinGlobals: true
-      }
-    ],
+    'no-redeclare': ['error', { builtinGlobals: true }],
     'no-return-assign': ['error', 'always'],
     'no-return-await': 'error',
     'no-script-url': 'error',
-    'no-self-assign': [
-      'error',
-      {
-        props: true
-      }
-    ],
+    'no-self-assign': ['error', { props: true }],
     'no-self-compare': 'error',
     'no-sequences': 'error',
     'no-throw-literal': 'error',
@@ -96,20 +80,14 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'error',
     'no-with': 'error',
-    // Turn this back on when we support Node 10
-    'prefer-named-capture-group': 'off',
+    'prefer-named-capture-group': 'error',
     'prefer-promise-reject-errors': 'error',
+    'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
     radix: ['error', 'as-needed'],
     'require-await': 'error',
     'require-unicode-regexp': 'error',
     'vars-on-top': 'error',
-    'wrap-iife': [
-      'error',
-      'outside',
-      {
-        functionPrototypeMethods: true
-      }
-    ],
+    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: true }],
     yoda: ['error', 'never']
   }
 };

@@ -1,7 +1,6 @@
 module.exports = {
   env: {
-    'cypress/globals': true,
-    jest: true
+    'cypress/globals': true
   },
   plugins: ['cypress'],
   rules: {

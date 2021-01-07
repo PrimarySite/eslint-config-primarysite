@@ -1,10 +1,5 @@
 module.exports = {
   plugins: ['react'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   settings: {
     react: {
       version: 'detect'
@@ -47,27 +42,12 @@ module.exports = {
     'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
-    'react/no-string-refs': [
-      'error',
-      {
-        noTemplateLiterals: true
-      }
-    ],
+    'react/no-string-refs': ['error', { noTemplateLiterals: true }],
     'react/no-this-in-sfc': 'error',
     'react/no-typos': 'error',
-    'react/no-unescaped-entities': [
-      'error',
-      {
-        forbid: ['>', '"', '}']
-      }
-    ],
+    'react/no-unescaped-entities': ['error', { forbid: ['>', '"', '}'] }],
     'react/no-unknown-property': 'error',
-    'react/no-unsafe': [
-      'error',
-      {
-        checkAliases: true
-      }
-    ],
+    'react/no-unsafe': ['error', { checkAliases: true }],
     'react/no-unused-prop-types': 'error',
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': ['error', 'disallow-in-func'],
@@ -83,12 +63,7 @@ module.exports = {
       }
     ],
     'react/react-in-jsx-scope': 'error',
-    'react/require-default-props': [
-      'error',
-      {
-        forbidDefaultForRequired: true
-      }
-    ],
+    'react/require-default-props': ['error', { forbidDefaultForRequired: true }],
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
@@ -161,12 +136,7 @@ module.exports = {
         when: 'never'
       }
     ],
-    'react/jsx-filename-extension': [
-      'error',
-      {
-        extensions: ['.js']
-      }
-    ],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
     'react/jsx-fragments': ['error', 'syntax'],
     'react/jsx-handler-names': [
@@ -185,13 +155,8 @@ module.exports = {
       }
     ],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-key': 'error',
-    'react/jsx-max-depth': [
-      'error',
-      {
-        max: 4
-      }
-    ],
+    'react/jsx-key': ['error', { checkFragmentShorthand: true }],
+    'react/jsx-max-depth': ['error', { max: 4 }],
     'react/jsx-max-props-per-line': [
       'error',
       {
@@ -212,28 +177,13 @@ module.exports = {
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'off',
-    'react/jsx-no-target-blank': [
-      'error',
-      {
-        enforceDynamicLinks: 'always'
-      }
-    ],
+    'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
     'react/jsx-no-undef': 'error',
     'react/jsx-one-expression-per-line': 'error',
-    'react/jsx-pascal-case': [
-      'error',
-      {
-        allowAllCaps: false
-      }
-    ],
+    'react/jsx-pascal-case': ['error', { allowAllCaps: false }],
     'react/jsx-props-no-multi-spaces': 'error',
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-sort-default-props': [
-      'error',
-      {
-        ignoreCase: true
-      }
-    ],
+    'react/jsx-sort-default-props': ['error', { ignoreCase: true }],
     'react/jsx-sort-props': [
       'error',
       {
